@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Imagens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    figure {
+      width: 250px;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Galeria Nerd</h2>
+
+  <div class="galeria">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/pt/3/33/Homem_Aranha_Logo.png" alt="Homem-Aranha">
+      <figcaption>Homem-Aranha: o herói amigão da vizinhança.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Dragon_Ball_logo.png" alt="Dragon Ball">
+      <figcaption>Dragon Ball: uma das sagas mais épicas dos animes.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Console_Game_Boy_Color_Purple.png" alt="Game Boy Color">
+      <figcaption>Game Boy Color: o portátil que marcou gerações.</figcaption>
+    </figure>
+  </div>
+
+</body>
+</html>

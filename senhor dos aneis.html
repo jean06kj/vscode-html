@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Senhor dos Anéis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao site de O Senhor dos Anéis</h1>
+    <p>Escolha uma das partes da trilogia para explorar:</p>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="showContent('sociedade')">A Sociedade do Anel</a></li>
+        <li><a href="javascript:void(0);" onclick="showContent('duas_torres')">As Duas Torres</a></li>
+        <li><a href="javascript:void(0);" onclick="showContent('retorno_rei')">O Retorno do Rei</a></li>
+    </ul>
+
+    <div id="sociedade" class="content">
+        <h2>A Sociedade do Anel</h2>
+        <p>Este é o primeiro filme da trilogia "O Senhor dos Anéis", baseado no livro de J.R.R. Tolkien.</p>
+        <p>A história segue Frodo Bolseiro, que parte em uma missão para destruir o Um Anel e impedir que o Senhor das Trevas, Sauron, conquiste a Terra-Média.</p>
+    </div>
+
+    <div id="duas_torres" class="content">
+        <h2>As Duas Torres</h2>
+        <p>O segundo filme da trilogia segue a jornada de Frodo e Sam enquanto tentam chegar à Montanha da Perdição para destruir o Um Anel.</p>
+        <p>Enquanto isso, Aragorn, Legolas e Gimli tentam salvar os habitantes de Rohan da ameaça de Saruman e do exército de orcs.</p>
+    </div>
+
+    <div id="retorno_rei" class="content">
+        <h2>O Retorno do Rei</h2>
+        <p>O último filme da trilogia, que mostra a batalha final pela Terra-Média. Frodo e Sam finalmente chegam à Montanha da Perdição para destruir o Um Anel.</p>
+        <p>Enquanto isso, Aragorn assume seu destino como Rei de Gondor, enfrentando as forças de Sauron em uma batalha épica.</p>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            // Oculta todos os conteúdos
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Exibe o conteúdo correspondente
+            const activeContent = document.getElementById(contentId);
+            activeContent.classList.add('active');
+        }
+    </script>
+</body>
+</html>

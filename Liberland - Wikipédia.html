@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberland - Estrutura HTML</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1><strong>República Livre de Liberland</strong></h1>
+    <nav>
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#geografia">Geografia</a></li>
+        <li><a href="#reconhecimento">Reconhecimento</a></li>
+        <li><a href="#cidadania">Cidadania</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="introducao" class="secao">
+      <h2>Introdução</h2>
+      <p><strong>Liberland</strong>, oficialmente <em>República Livre de Liberland</em>, é uma <mark>micronação</mark> autoproclamada em uma área entre a <span>Croácia</span> e a <span>Sérvia</span>. Foi fundada por <strong>Vít Jedlička</strong> em <time datetime="2015-04-13">13 de abril de 2015</time>.</p>
+    </section>
+
+    <section id="historia" class="secao">
+      <h2>História</h2>
+      <article>
+        <h3>Fundação</h3>
+        <p>O território foi escolhido com base no princípio de <em>terra nullius</em>, ou seja, um local não reivindicado por nenhum estado. <span>Vít Jedlička</span> hasteou a bandeira de Liberland e declarou sua independência em <time datetime="2015-04-13">13 de abril de 2015</time>.</p>
+      </article>
+      <article>
+        <h3>Bandeira</h3>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flag_of_Liberland.svg/320px-Flag_of_Liberland.svg.png" alt="Bandeira de Liberland">
+          <figcaption>Bandeira oficial da República Livre de Liberland.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="geografia" class="secao">
+      <h2>Geografia</h2>
+      <p>Localizada às margens do <strong>Rio Danúbio</strong>, a área possui cerca de <mark>7 km²</mark> de extensão e é predominantemente <span>coberta por floresta</span>.</p>
+    </section>
+
+    <section id="reconhecimento" class="secao">
+      <h2>Reconhecimento Internacional</h2>
+
+      <details>
+        <summary>Pronunciamentos Oficiais</summary>
+        <p>Até o momento, <em>nenhum estado reconhece</em> oficialmente Liberland como nação soberana.</p>
+      </details>
+
+      <details>
+        <summary>Apoio Popular</summary>
+        <p>Apesar da falta de reconhecimento formal, a proposta atraiu milhares de <span>solicitações de cidadania</span> online.</p>
+      </details>
+    </section>
+
+    <section id="cidadania" class="secao">
+      <h2>Cidadania</h2>
+      <article>
+        <h3>Processo de Aplicação</h3>
+        <p>Interessados podem preencher um <mark>formulário online</mark> no site oficial. É necessário demonstrar alinhamento com os princípios libertários.</p>
+
+        <form>
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome"><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="motivo">Por que deseja ser cidadão?</label><br>
+          <textarea id="motivo" name="motivo" rows="4"></textarea><br>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </section>
+
+    <section id="tabela-info" class="secao">
+      <h2>Informações Básicas</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Dado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fundação</td>
+            <td><time datetime="2015-04-13">13/04/2015</time></td>
+          </tr>
+          <tr>
+            <td>Área</td>
+            <td>7 km²</td>
+          </tr>
+          <tr>
+            <td>Fundador</td>
+            <td>Vít Jedlička</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <aside>
+    <h3>Curiosidade</h3>
+    <p>O lema nacional de Liberland é: <span>"Viva e deixe viver"</span>.</p>
+  </aside>
+
+  <footer>
+    <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Liberland" target="_blank">Wikipédia - Liberland</a></p>
+  </footer>
+
+</body>
+</html>

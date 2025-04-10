@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Indica que este é um documento HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início do documento HTML com idioma definido como português do Brasil -->
+
+<head>
+    <!-- Cabeçalho da página, onde ficam as configurações e metadados -->
+
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8, suportando acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que a página seja exibida corretamente em dispositivos móveis (layout responsivo) -->
+
+    <title>Exercício 1 - Citação Star Wars</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <style>
+        /* Início da estilização da página com CSS */
+
+        body {
+            font-family: Arial, sans-serif;
+            /* Define a fonte principal do texto */
+            
+            margin: 40px;
+            /* Adiciona margem ao redor do conteúdo da página */
+            
+            background-color: #f4f4f4;
+            /* Define a cor de fundo da página */
+            
+            text-align: center;
+            /* Centraliza o conteúdo horizontalmente */
+        }
+
+        blockquote {
+            font-size: 18px;
+            /* Define o tamanho da fonte da citação */
+            
+            background: white;
+            /* Define o fundo branco para o bloco de citação */
+            
+            padding: 20px;
+            /* Espaçamento interno (dentro do bloco) */
+            
+            border-left: 5px solid #ffcc00;
+            /* Adiciona uma borda amarela à esquerda, como destaque visual */
+            
+            display: inline-block;
+            /* Faz com que o bloco ocupe apenas o espaço necessário */
+            
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            /* Adiciona uma leve sombra para dar profundidade */
+            
+            max-width: 600px;
+            /* Limita a largura máxima da citação */
+            
+            text-align: left;
+            /* Alinha o texto da citação à esquerda, mesmo que esteja centralizado na tela */
+        }
+
+        cite {
+            display: block;
+            /* Faz o elemento ocupar uma linha inteira */
+            
+            margin-top: 10px;
+            /* Adiciona espaço acima da citação do autor */
+            
+            font-style: italic;
+            /* Deixa o texto em itálico para indicar a fonte da citação */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Corpo da página, onde o conteúdo visível é exibido -->
+
+    <blockquote cite="https://www.starwars.com">
+        <!-- Bloco de citação, com referência à fonte (URL) -->
+        
+        "O medo é o caminho para o lado sombrio. O medo leva à raiva, a raiva leva ao ódio, o ódio leva ao sofrimento."
+        <!-- Frase icônica dita por Mestre Yoda -->
+
+        <cite>— Mestre Yoda, Star Wars: A Ameaça Fantasma</cite>
+        <!-- Nome do autor e fonte da citação -->
+    </blockquote>
+</body>
+
+</html>
