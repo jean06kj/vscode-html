@@ -1,77 +1,102 @@
 <!DOCTYPE html>
+<!-- Define que este é um documento HTML5 -->
+
 <html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar acentos e símbolos -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna a página responsiva, ajustando para diferentes tamanhos de tela -->
+
     <title>Hogwarts - As Casas</title>
+    <!-- Título que aparece na aba do navegador -->
+
     <style>
+        /* Estilizações gerais da página */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            margin: 20px;                   /* Espaçamento externo da página */
+            padding: 20px;                  /* Espaçamento interno */
         }
+
         h1, h2 {
-            color: #5a2d82;
+            color: #5a2d82; /* Cor roxa para os títulos principais e subtítulos */
         }
+
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* Remove os marcadores padrão da lista */
+            padding: 0;            /* Remove o espaçamento padrão */
         }
+
         li {
-            margin: 10px 0;
+            margin: 10px 0; /* Espaçamento entre os itens da lista */
         }
+
         a {
-            color: #007bff;
-            text-decoration: none;
+            color: #007bff;            /* Cor azul nos links */
+            text-decoration: none;     /* Remove o sublinhado dos links */
         }
+
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
         }
+
         .house {
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
+            padding: 20px;             /* Espaçamento interno da seção */
+            border-radius: 10px;       /* Bordas arredondadas */
+            margin-bottom: 30px;       /* Espaço entre as seções */
         }
+
+        /* Cores específicas para cada casa */
         .gryffindor { background-color: #ae0001; color: white; }
         .slytherin { background-color: #2a623d; color: white; }
         .ravenclaw { background-color: #222f5b; color: white; }
         .hufflepuff { background-color: #ffdb58; color: black; }
     </style>
 </head>
+
 <body>
 
     <h1>Bem-vindo a Hogwarts!</h1>
+    <!-- Título principal da página -->
+
     <p>Escolha uma das casas para saber mais:</p>
+    <!-- Introdução rápida -->
 
     <ul>
+        <!-- Lista de links para as seções das casas -->
         <li><a href="#gryffindor">🦁 Gryffindor</a></li>
         <li><a href="#slytherin">🐍 Slytherin</a></li>
         <li><a href="#ravenclaw">🦅 Ravenclaw</a></li>
         <li><a href="#hufflepuff">🦡 Hufflepuff</a></li>
     </ul>
 
-    <!-- Seção Gryffindor -->
+    <!-- Seção da casa Gryffindor -->
     <div id="gryffindor" class="house gryffindor">
         <h2>Gryffindor 🦁</h2>
         <p>A casa dos bravos e corajosos! Gryffindor valoriza coragem, bravura e determinação. Seus membros mais famosos incluem Harry Potter, Hermione Granger e Alvo Dumbledore.</p>
         <a href="#top">🔝 Voltar ao topo</a>
+        <!-- Link para voltar ao topo da página -->
     </div>
 
-    <!-- Seção Slytherin -->
+    <!-- Seção da casa Slytherin -->
     <div id="slytherin" class="house slytherin">
         <h2>Slytherin 🐍</h2>
         <p>A casa dos ambiciosos e astutos! Slytherin valoriza determinação, inteligência e liderança. Famosos membros incluem Severus Snape, Tom Riddle (Voldemort) e Draco Malfoy.</p>
         <a href="#top">🔝 Voltar ao topo</a>
     </div>
 
-    <!-- Seção Ravenclaw -->
+    <!-- Seção da casa Ravenclaw -->
     <div id="ravenclaw" class="house ravenclaw">
         <h2>Ravenclaw 🦅</h2>
         <p>A casa dos sábios e criativos! Ravenclaw valoriza inteligência, aprendizado e originalidade. Membros conhecidos incluem Luna Lovegood e Rowena Ravenclaw.</p>
         <a href="#top">🔝 Voltar ao topo</a>
     </div>
 
-    <!-- Seção Hufflepuff -->
+    <!-- Seção da casa Hufflepuff -->
     <div id="hufflepuff" class="house hufflepuff">
         <h2>Hufflepuff 🦡</h2>
         <p>A casa dos leais e trabalhadores! Hufflepuff valoriza justiça, paciência e amizade. Membros notáveis incluem Cedrico Diggory e Ninfadora Tonks.</p>

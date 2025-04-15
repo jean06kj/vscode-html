@@ -1,45 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contador com Estilo</title>
+    <style> 
+        .quadro {
+            width: 400px; /* Corrigido: "widht" para "width" */
+            height: 400px;
+            margin: 60px auto; /* Centraliza horizontalmente e define margem superior */
+            border: 3px solid red; /* Direto aqui, não precisa de ID separado */
+            border-radius: 25px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 20px;
+            font-family: Calibri, sans-serif;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+    </style>
 </head>
-<body> <!DOCTYPE html>
-<html>
-	<head>
-		<style> 
-		.quadro {
-			widht: 400px;
-			height: 400px;
-			margin: 450px;
-			margin-top: 60px;
-			border: 3px dashed black;
-			border-radius: 25px;
-			text-align: center;
-			font-size: 18px;
-			font-weight: bold;
-			padding-top: 5px;
-			font-family: calibri;
-		}
-		#primeiro{
-			border: 3px solid red;
-		}
-		</style>
-	</head>
-		<body>
-			<div class="quadro" id="primeiro">
-			<?php 
-				$c = 0;
-				while ($c<=10) {
-					$c ++;
-					echo "$c </br>";
-				}
-         
-			?>
-    		</div>
-		</body>
-</html>
+<body>
+
+    <div class="quadro">
+        <?php 
+            // Exibe números de 1 a 11
+            for ($c = 1; $c <= 11; $c++) {
+                echo "$c<br>";
+            }
+        ?>
+    </div>
 
 </body>
 </html>
