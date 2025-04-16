@@ -11,7 +11,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #bb86fc;
+    color: #7300ff;
     font-size: 2.5em;
     margin-bottom: 30px;
     text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
@@ -28,7 +28,7 @@ h1 {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    background-color: #1e1e1e;
+    background-color: #000000;
     transition: all 0.3s ease;
 }
 
@@ -39,7 +39,7 @@ h1 {
 
 li span.titulo {
     font-weight: bold;
-    color: #03dac6;
+    color: #271cf8;
     font-size: 1.1em;
 }
 
