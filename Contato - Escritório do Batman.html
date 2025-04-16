@@ -1,54 +1,156 @@
 <!DOCTYPE html>
-<!-- Declara que este é um documento HTML5 -->
-
 <html lang="pt-BR">
-<!-- Início do documento HTML com o idioma definido como português do Brasil -->
-
 <head>
-    <!-- Cabeçalho do documento: metadados e configurações principais -->
-
     <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres como UTF-8 (permite uso de acentos e símbolos especiais) -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Torna o site responsivo, ajustando para diferentes tamanhos de tela (ideal para celular/tablet) -->
-
     <title>Contato - Escritório do Batman</title>
-    <!-- Título da página que aparece na aba do navegador -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --batman-yellow: #FFD700;
+            --batman-black: #000000;
+            --batman-gray: #111111;
+            --batman-light: #F0F0F0;
+            --batman-red: #CC0000;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--batman-black);
+            color: var(--batman-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('https://wallpapers.com/images/hd/red-batman-logo-z1hkjbslwq391sy3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+            border: 3px solid var(--batman-red);
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(2px);
+        }
+        
+        h1 {
+            font-family: 'Bangers', cursive;
+            color: var(--batman-yellow);
+            text-align: center;
+            font-size: 2.8rem;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+        
+        p {
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .contact-link {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--batman-yellow);
+            padding: 18px 25px;
+            margin: 25px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid var(--batman-red);
+            transition: all 0.3s ease;
+            text-align: center;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        
+        .contact-link:hover {
+            background-color: var(--batman-red);
+            color: var(--batman-light);
+            transform: scale(1.03);
+            box-shadow: 0 0 20px var(--batman-red);
+        }
+        
+        .bat-logo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--batman-yellow);
+            box-shadow: 0 0 20px var(--batman-yellow);
+            transition: transform 0.3s ease;
+            background-color: var(--batman-black);
+            padding: 5px;
+        }
+        
+        .bat-logo:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 30px var(--batman-red);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--batman-yellow);
+            font-size: 1rem;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px 15px;
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-link {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            
+            .bat-logo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Corpo da página: onde o conteúdo visível é colocado -->
-
-    <h1>Entre em Contato com o Escritório do Batman em Gotham City</h1>
-    <!-- Título principal da página -->
-
-    <p>Se você precisa de ajuda, pode enviar um e-mail ou fazer uma ligação:</p>
-    <!-- Parágrafo explicativo sobre as formas de contato -->
-
-    <!-- Link para enviar e-mail com assunto preenchido automaticamente -->
-    <p>
-        <a href="mailto:batman@gotham.com?subject=Preciso%20de%20ajuda%20em%20Gotham">
-            Enviar um e-mail para o Batman
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/40/89/36/4089363d77b6413231e7c20df14f2271.jpg" alt="Símbolo do Batman" class="bat-logo">
+        
+        <h1>ENTRE EM CONTATO COM O ESCRITÓRIO DO BATMAN</h1>
+        
+        <p>Gotham City está sob sua vigilância. Use os canais abaixo para acionar o Cavaleiro das Trevas:</p>
+        
+        <a href="mailto:batman@gotham.com?subject=Preciso%20de%20ajuda%20em%20Gotham" class="contact-link">
+            🦇 ACIONAR O BAT-SINAL (E-MAIL)
         </a>
-    </p>
-    <!-- 
-        O link acima usa a tag <a> com o atributo href="mailto:"
-        Isso faz com que, ao clicar, o usuário abra o aplicativo de e-mail com:
-        - O destinatário já preenchido: batman@gotham.com
-        - O assunto do e-mail também preenchido: "Preciso de ajuda em Gotham"
-        Obs: os espaços no assunto são substituídos por "%20", pois é o padrão da URL.
-    -->
-
-    <!-- Link para ligação telefônica (funciona em dispositivos móveis) -->
-    <p>
-        <a href="tel:+5511999990000">📞 Ligar para o Escritório do Batman: +55 (11) 99999-0000</a>
-    </p>
-    <!-- 
-        O link acima usa o protocolo "tel:", que permite iniciar uma ligação ao clicar no link.
-        Funciona principalmente em smartphones ou aplicativos que reconheçam chamadas.
-        O número está no formato internacional: +55 (código do Brasil) 11 (São Paulo)
-    -->
+        
+        <a href="tel:+5511999990000" class="contact-link">
+            📞 LIGAÇÃO DE EMERGÊNCIA (BAT-TELEFONE)
+        </a>
+        
+        <footer>
+            "A noite é mais escura antes do amanhecer. Mas eu prometo: o amanhecer virá."
+            <br><br>
+            Operação 24h - Resposta garantida antes do nascer do sol
+        </footer>
+    </div>
 </body>
-
 </html>

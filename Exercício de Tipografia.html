@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício de Tipografia</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      line-height: 1.2;
+      transition: all 0.3s ease;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    .invertido h1 {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .invertido p {
+      font-family: 'Playfair Display', serif;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tipografia com Google Fonts</h1>
+  <p>
+    Este parágrafo está usando a fonte Roboto. Ajustamos o tamanho da fonte e o espaçamento entre linhas
+    para melhorar a leitura. Clique no botão abaixo para inverter as fontes!
+  </p>
+
+  <button onclick="trocarFontes()">Trocar Fontes</button>
+
+  <script>
+    function trocarFontes() {
+      document.body.classList.toggle('invertido');
+    }
+  </script>
+</body>
+</html>

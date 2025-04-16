@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Unidades de Medida e Estilos de Fonte</title>
+    <style>
+        /* Definição de fontes personalizadas */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro&display=swap');
+        
+        /* Estilo para o título principal usando rem */
+        h1 {
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif; /* Fonte moderna e sem serifa */
+            font-weight: 700; /* Negrito */
+            letter-spacing: 1px; /* Espaçamento entre letras */
+            text-transform: uppercase; /* Todas as letras maiúsculas */
+            color: #2c3e50;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+        }
+
+        /* Primeiro parágrafo usando em */
+        p.paragrafo-em {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif; /* Fonte legível para parágrafos */
+            font-weight: 400; /* Peso normal */
+            font-style: italic; /* Itálico */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            color: #34495e;
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: #e0e0e0;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Segundo parágrafo usando px */
+        p.paragrafo-px {
+            font-size: 16px;
+            font-family: 'Source Code Pro', monospace; /* Fonte monoespaçada */
+            font-weight: 400;
+            line-height: 1.5;
+            color: #2c3e50;
+            padding: 10px;
+            background-color: #d0d0d0;
+            border: 1px dashed #7f8c8d;
+        }
+
+        /* Destaque especial dentro do parágrafo */
+        .destaque {
+            font-weight: bold;
+            color: #e74c3c;
+            font-style: normal;
+        }
+
+        /* Tamanho de fonte base para o documento */
+        html {
+            font-size: 16px;
+            font-family: Arial, sans-serif; /* Fonte fallback */
+        }
+    </style>
+</head>
+<body>
+    <h1>Título Principal (2rem)</h1>
+    <p class="paragrafo-em">
+        Este parágrafo está estilizado com font-size em <span class="destaque">em</span>. A unidade em é relativa ao tamanho da fonte do elemento pai. Aqui usamos a fonte Roboto em itálico com bom espaçamento entre linhas.
+    </p>
+    <p class="paragrafo-px">
+        Este parágrafo está estilizado com font-size em <span class="destaque">px</span>. A unidade px é um valor absoluto em pixels. Usamos uma fonte monoespaçada (Source Code Pro) para simular texto de código.
+    </p>
+</body>
+</html>
