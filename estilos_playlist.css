@@ -1,0 +1,63 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+#playlist {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#playlist li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    transition: all 0.3s ease;
+}
+
+#playlist li:hover {
+    background-color: #2a2a2a;
+    transform: translateX(5px);
+}
+
+li span.titulo {
+    font-weight: bold;
+    color: #03dac6;
+    font-size: 1.1em;
+}
+
+li span.filme {
+    font-style: italic;
+    color: #cf6679;
+}
+
+ul > li.destaque {
+    background: linear-gradient(135deg, #3700b3 0%, #6200ee 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.destaque span.titulo {
+    color: #ffffff;
+}
+
+.destaque span.filme {
+    color: #ffffff;
+    font-weight: bold;
+}
